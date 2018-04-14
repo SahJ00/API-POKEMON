@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>API-POKEMON</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="image/pokeball-64-256624.png" />
+  <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div class="container-fluid bg-dark pb-2 pt-2">
+    <div class="row ">
+      <div class="col-md-12">
+        <header>
+          <h1 class="text-light">
+            <strong> de Pokemon</strong>
+            <h1>
+        </header>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <img class="img-header" src="image/pokemon.jpg" alt="cabecera de pokemon">
+      </div>
+    </div>
+  </div>
+
+  <!-- FIN HEADER -->
+  <!-- NAVEGATION -->
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="">
+                <img class="img-nav" src="image/pikachu.gif" alt="imagen pikachu">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <form class="navbar-form navbar-right" role="search">  
+                    <div class="form-group">                           
+                        <input id="pokemon-search-input" type="text" class="form-control personal-input" placeholder="Search pokemon..."/>                                     
+                    </div>                                     
+                <button id="btn-search" type="button" class="btn btn-default">Search</button>         
+                    <div class="dropdown">
+                 <button class="btn btn-default dropdown-toggle mt-2 pt2" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               Pokemon type
+               <span class="caret"></span>
+                 </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">normal</a></li>
+                    <li><a href="#">fire</a></li>
+                    <li><a href="#">fighting</a></li>
+                    <li><a href="#">water</a></li>
+                    <li><a href="#">flying</a></li>
+                    <li><a href="#">grass</a></li>
+                    <li><a href="#">poison</a></li>
+                    <li><a href="#">electric</a></li>
+                    <li><a href="#">ground</a></li>
+                    <li><a href="#">psychic</a></li>
+                    <li><a href="#">rock</a></li>
+                    <li><a href="#">ice</a></li>
+                    <li><a href="#">bug</a></li>
+                    <li><a href="#">dragon</a></li>
+                    <li><a href="#">ghost</a></li>
+                    <li><a href="#">dark</a></li>
+                    <li><a href="#">steel</a></li>
+                    <li><a href="#">fairy</a></li>
+                 </ul>
+                    </div>   
+                </form>                 
+              </div>
+            </nav>
+          </div>
+        </div>
+      
+      
+
+        <!-- FIN NAVEGATION -->
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div id="infoPokemon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Evolución</h4>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"></script>
+    <script src="js/appV1.js"></script>
+</body>
+
+</html>

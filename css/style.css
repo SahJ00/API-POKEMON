@@ -1,0 +1,37 @@
+body {
+    background: #f1f1f1 !important;
+}
+
+.pokemons {
+    float: left;
+}
+
+.pokeImage {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.description>span {
+    display: block;
+    /*color: #E3350D;*/
+}
+
+.active {
+    border-radius: 0px 50px 50px 0px;
+    border: 1px solid #000000;
+}
+
+.search {
+    background-color: #e9eae8;
+    border-radius: 50px 0px 0px 50px;
+    border: 1px solid #000000;
+}
+
+.img-header {
+    width: 100%;
+}
+
+.img-nav {
+    width: 100px;
+}
